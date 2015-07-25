@@ -1,0 +1,39 @@
+<template name="postDetails">
+  {{#contentFor "headerButtonLeft"}}
+    {{>ionNavBackButton path="index"}}
+  {{/contentFor}}
+  {{#contentFor "headerTitle"}}
+    <h1 class="title">Lists</h1>
+  {{/contentFor}}
+  {{#contentFor "headerButtonRight"}}
+    <button class="button button-clear" onclick="alert('TODO')">Edit</button>
+  {{/contentFor}}
+
+  {{#ionView}}
+    {{#ionContent}}
+      {{#ionList}}
+
+
+          {{#ionItem buttonRight=true avatar=true}}
+
+            <img src="https://randomuser.me/api/portraits/thumb/men/27.jpg">
+            John Smith
+            <h2>{{title}}</h2>
+            <p>
+              
+              {{body}}
+            </p>
+            {{#with attachImgSrc}}
+            <img src="{{this.url}}" alt="{{this.name}}" width=240>
+            {{/with}}
+            <img src="https://randomuser.me/api/portraits/thumb/men/27.jpg">
+         
+
+
+          {{/ionItem}}
+
+
+      {{/ionList}}
+    {{/ionContent}}
+  {{/ionView}}
+</template>

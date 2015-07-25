@@ -1,0 +1,36 @@
+<template name="tabsThree">
+  {{> _tabsHeader}}
+
+  {{#ionContent class="padding"}}
+    <h1>Community Lists</h1>
+     {{#ionList}}
+
+
+
+        {{#ionItem path="postLists" iconLeft=true iconRight=true}}
+          {{> ionIcon icon="ios-checkmark" class="positive"}}
+          Running
+          {{> ionIcon icon="ios-arrow-right"}}
+        {{/ionItem}}
+
+
+
+        {{#ionItem path="tabs.one" iconLeft=true iconRight=true}}
+          {{> ionIcon icon="ios-checkmark" class="positive"}}
+          Tabs
+          {{> ionIcon icon="ios-arrow-right"}}
+        {{/ionItem}}
+
+        {{#ionItem path="userAccounts" iconLeft=true iconRight=true}}
+          {{> ionIcon icon="ios-checkmark" class="positive"}}
+          User Accounts
+          {{> ionIcon icon="ios-arrow-right"}}
+        {{/ionItem}}
+
+      {{/ionList}}
+
+
+  {{/ionContent}}
+
+  {{> _tabs}}
+</template>
